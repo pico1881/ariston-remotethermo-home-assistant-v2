@@ -15,8 +15,9 @@ from homeassistant.components.climate.const import (
     HVAC_MODE_HEAT,
     HVAC_MODE_OFF,
     HVAC_MODE_COOL,
-    SUPPORT_PRESET_MODE,
-    SUPPORT_TARGET_TEMPERATURE,
+    ClimateEntityFeature,
+    """SUPPORT_PRESET_MODE,"""
+    """SUPPORT_TARGET_TEMPERATURE,"""
 )
 from homeassistant.const import (
     ATTR_TEMPERATURE,
@@ -52,7 +53,8 @@ from .const import (
 )
 
 SCAN_INTERVAL = timedelta(seconds=2)
-SUPPORT_FLAGS = SUPPORT_PRESET_MODE | SUPPORT_TARGET_TEMPERATURE
+"""SUPPORT_FLAGS = SUPPORT_PRESET_MODE | SUPPORT_TARGET_TEMPERATURE"""
+SUPPORT_FLAGS = ClimateEntityFeature.PRESET_MODE | ClimateEntityFeature.TARGET_TEMPERATURE
 UNKNOWN_TEMP = 0.0
 
 _LOGGER = logging.getLogger(__name__)
