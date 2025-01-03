@@ -21,8 +21,7 @@ from homeassistant.components.climate.const import (
 from homeassistant.const import (
     ATTR_TEMPERATURE,
     CONF_NAME,
-    TEMP_CELSIUS,
-    TEMP_FAHRENHEIT,
+    UnitOfTemperature,
 )
 
 from .const import (
@@ -138,7 +137,7 @@ class AristonThermostat(ClimateEntity):
         try:
             units = self._api.sensor_values[param_zoned(PARAM_CH_SET_TEMPERATURE, self._zone)][UNITS]
         except KeyError:
-            return TEMP_CELSIUS
+            return UnitOfTemperature.CELSIUS
         return units
 
     @property
