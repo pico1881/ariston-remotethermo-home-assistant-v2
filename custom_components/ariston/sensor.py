@@ -18,7 +18,7 @@ from homeassistant.const import (
     DEVICE_CLASS_TEMPERATURE,
     DEVICE_CLASS_TIMESTAMP,
     DEVICE_CLASS_VOLTAGE,
-    ENERGY_KILO_WATT_HOUR
+    UnitOfEnergy
 
 )
 
