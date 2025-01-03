@@ -6,11 +6,11 @@ from copy import deepcopy
 from homeassistant.const import CONF_NAME, CONF_SENSORS
 from homeassistant.helpers.entity import Entity
 from homeassistant.const import (
-    SensorDeviceClass,
     UnitOfEnergy,
 )
 
 from homeassistant.components.sensor import (
+    SensorDeviceClass,
     SensorStateClass,
 )
 
