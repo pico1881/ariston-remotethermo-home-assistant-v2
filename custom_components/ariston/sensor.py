@@ -16,9 +16,11 @@ from homeassistant.const import (
     DEVICE_CLASS_PRESSURE,
     DEVICE_CLASS_SIGNAL_STRENGTH,
     DEVICE_CLASS_TEMPERATURE,
-    DEVICE_CLASS_TIMESTAMP,
-    DEVICE_CLASS_VOLTAGE,
-    ENERGY_KILO_WATT_HOUR
+    SensorDeviceClass.TIMESTAMP,
+    SensorDeviceClass.VOLTAGE,
+ """   DEVICE_CLASS_TIMESTAMP,"""
+   """ DEVICE_CLASS_VOLTAGE,"""
+    UnitOfEnergy.KILO_WATT_HOUR
 )
 
 from homeassistant.components.sensor import (
